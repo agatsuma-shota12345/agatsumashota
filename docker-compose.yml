@@ -10,5 +10,5 @@ services:
     volumes:
       - nginx:/var/www
 
-  volumes:
-    nginx:
+volumes:
+  nginx:
