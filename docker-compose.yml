@@ -2,13 +2,14 @@ services:
   # nginxコンテナ
   nginx:
     container_name: nginx
+    # イメージ名を指定
+    image: ghcr.io/agatsuma-shota12345/agatsumashota
+    # dockerfileのパスを指定
     build:
       context: .
       dockerfile: nginx/Dockerfile
     ports:
       - 80:80
-    volumes:
-      - nginx:/var/www
 
 volumes:
   nginx:
